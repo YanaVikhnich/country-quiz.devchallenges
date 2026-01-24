@@ -4,9 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="A quiz about countries around the world." />
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon"/>
     <title>Country Quiz</title>
-    
+
   </head>
   <body>
+      <header class="header hidden">
+      <h1 class="header__title">Country Quiz</h1>
+      <span class="header__score">1/10 Points</span>
+    </header>
+    <main class="main">
+    <section class="section ">
+      <div class="quiz-container">
+        <div class="quiz-steps">
+          <button  class="button quiz-steps__count quiz-steps__count--answered"><span class="quiz-steps__number">1</span></button>
+          <button class="button quiz-steps__count"><span class="quiz-steps__number">2</span></button>
+          <button class="button quiz-steps__count"><span class="quiz-steps__number">3</span></button>
+          <button class="button quiz-steps__count"><span class="quiz-steps__number">4</span></button>
+          <button class="button quiz-steps__count"><span class="quiz-steps__number">5</span></button>
+          <button class="button quiz-steps__count"><span class="quiz-steps__number">6</span></button>
+          <button class="button quiz-steps__count"><span class="quiz-steps__number">7</span></button>
+          <button class="button quiz-steps__count"><span class="quiz-steps__number">8</span></button>
+          <button class="button quiz-steps__count"><span class="quiz-steps__number">9</span></button>
+          <button class="button quiz-steps__count"><span class="quiz-steps__number">10</span></button>
+        </div>
+        <div class="quiz">
+          <div class="quiz__question">Hvkdhcvkvc .clvbjlzbv?</div>
+          
+            <ul class="quiz__answers-list">
+              <li class="quiz__answer-items">
+                <input type="radio" class="button quiz__answer-input-control" id="top-left" name="answer"><label for="top-left" class="quiz__answer">sgszdg</label>
+              </li>
+              <li class="quiz__answer-items">
+                <input type="radio" class="button quiz__answer-input-control" id="top-right" name="answer"><label for="top-right" class="quiz__answer">dgSDG</label>
+              </li>
+              <li class="quiz__answer-items">
+                <input type="radio" id="bottom-left" class="button quiz__answer-input-control" name="answer"><label for="bottom-left" class="quiz__answer">aegfA</label>
+              </li>
+              <li class="quiz__answer-items">
+                <input type="radio" class="button quiz__answer-input-control" id="bottom-right" name="answer"><label for="bottom-right" class="quiz__answer">sethdxh</label>
+              </li>
+            </ul>
+          
+        </div>
+      </div>
+    </section>
+    <section class="congrats-section hidden">
+      <div class="congrats-section__container">
+        <svg height="100" class="congrats-section__congrats-image"><image width="300" href="./images/congrats.png"></svg>
+          <h1 class="congrats-section__title">Congrats! You completed the quiz.</h1>
+      <div class="congrats-section__results">You answer 4/10 correctly.</div>
+      <button class="button congrats-section__restart-button" type="reset">Play again</button>
+      </div>
+    </section>
+    </main>
   </body>
 </html>
