@@ -1,0 +1,7 @@
+.quiz__answers-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 25px;
+  padding: 25px 0;
+}

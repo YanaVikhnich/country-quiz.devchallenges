@@ -1,0 +1,5 @@
+.quiz-steps {
+  display: flex;
+  gap: 12px;
+  padding: 10px;
+}

@@ -1,0 +1,67 @@
+.congrats-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #393f6e;
+  border-radius: 12px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+}
+
+.congrats-section__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 40px;
+  text-align: center;
+}
+.congrats-section__congrats-image {
+  margin-top: -20px;
+  width: 300px;
+}
+.congrats-section__title {
+  color: #ffecc8;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.congrats-section__results {
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: #ffecc8;
+  margin-bottom: 25px;
+}
+.congrats-section__restart-button {
+  background: linear-gradient(120deg, #e65895, #bc6be8);
+  width: 200px;
+  padding: 20px;
+}
+
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding: 40px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-weight: 600;
+}
+.quiz-section {
+  background-color: #343964;
+  border-radius: 12px;
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+}
