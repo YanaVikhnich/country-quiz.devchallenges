@@ -16,12 +16,8 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-  padding: 40px;
+  padding: 30px 20px;
   text-align: center;
-}
-.congrats-section__congrats-image {
-  margin-top: -20px;
-  width: 300px;
 }
 .congrats-section__title {
   color: #ffecc8;
@@ -37,7 +33,9 @@
 .congrats-section__restart-button {
   background: linear-gradient(120deg, #e65895, #bc6be8);
   width: 200px;
+  height: 60px;
   padding: 20px;
+  margin-bottom: 30px;
 }
 
 .quiz-container {
@@ -54,6 +52,27 @@
   align-items: center;
   width: 100%;
   font-weight: 600;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  width: 100%;
+  max-width: 900px;
+}
+.header__score {
+  font-weight: 600;
+  text-align: center;
+  align-content: center;
+  width: 150px;
+  display: inline-block;
+  border-radius: 30px;
+  background-image: linear-gradient(120deg, #e65895, #bc6be8);
+  font-size: 1rem;
+}
+.header__score::before {
+  content: "🏆";
+  margin-right: 8px;
 }
 .quiz-section {
   background-color: #343964;

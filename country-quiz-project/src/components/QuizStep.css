@@ -24,6 +24,9 @@
 .quiz-steps__count--answered {
   background-image: linear-gradient(120deg, #e65895, #bc6be8);
 }
+.quiz-steps__count--current {
+  background-image: linear-gradient(120deg, #e65895, #bc6be8);
+}
 
 .quiz-steps__number {
   font-weight: medium;

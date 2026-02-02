@@ -1,5 +1,5 @@
-import './QuizQuestion.css';
+import "./QuizQuestion.css";
 
-export function QuizQuestion() {
-  return <div className="quiz__question">Jxhxckjxbkdcbdk&?</div>;
+export function QuizQuestion({ currentQuestionVal }) {
+  return <div className='quiz__question'>{currentQuestionVal}</div>;
 }

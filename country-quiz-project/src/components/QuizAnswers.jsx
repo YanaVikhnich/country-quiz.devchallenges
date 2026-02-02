@@ -1,15 +1,26 @@
+
 import { QuizAnswer } from "./QuizAnswer";
 
 import "./QuizAnswers.css";
 
-export function QuizAnswers() {
+export function QuizAnswers({ answersVal, correctVal }) {
+  if (answersVal.length === 0) {
+    return <p>Loading...</p>;
+  }
   return (
     <>
       <ul className='quiz__answers-list'>
-        <QuizAnswer id='top-left' name='answer' label='Answer 1' />
-        <QuizAnswer id='top-right' name='answer' label='Answer 2' />
-        <QuizAnswer id='bottom-left' name='answer' label='Answer 3' />
-        <QuizAnswer id='bottom-right' name='answer' label='Answer 4' />
+        {answersVal.map((data) => {
+          return (
+            <QuizAnswer
+              key={data.id}
+              id={data.id}
+              name='answer'
+              label={data}
+              correct={correctVal}
+            />
+          );
+        })}
       </ul>
     </>
   );
